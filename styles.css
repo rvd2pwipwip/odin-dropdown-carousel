@@ -7,16 +7,21 @@
   font-family: "Inter", sans-serif;
   --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
-  --color: #166e67;
+  --color: #666;
   --gap: 0.5rem;
   --radius: 5px;
 }
 
 body {
   margin: 2rem;
-  background-color: #b3e6f4;
+  background-color: #eee;
   font-size: 0.9rem;
   color: black;
+}
+
+#dropdown-strip {
+  display: flex;
+  column-gap: 1rem;
 }
 
 .btn {

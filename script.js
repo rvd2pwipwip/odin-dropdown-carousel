@@ -1,3 +1,8 @@
+const dropdownMenus = [...document.querySelectorAll('.dropdown-container')];
+console.log(dropdownMenus);
+
+dropdownMenus.forEach(() => {});
+
 const dropdownBtn = document.getElementById('btn');
 const dropdownMenu = document.getElementById('dropdown');
 const toggleArrow = document.getElementById('arrow');
