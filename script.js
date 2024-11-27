@@ -13,6 +13,18 @@ dropdownMenus.forEach((dropdownContainer) => {
 
   dropdownBtn.addEventListener('click', function (e) {
     e.stopPropagation();
+
+    // Hide all dropdown menus
+    dropdownMenus.forEach((container) => {
+      const menu = container.querySelector('.dropdown');
+      const arrow = container.querySelector('.arrow');
+      if (menu !== dropdownMenu && menu.classList.contains('show')) {
+        menu.classList.remove('show');
+        arrow.classList.remove('arrow');
+      }
+    });
+
+    // Toggle the clicked dropdown menu
     toggleDropdown();
   });
 
