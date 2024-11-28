@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <title>Dropdown</title>
+    <title>Dropdown & Carousel</title>
   </head>
   <body>
     <div id="dropdown-strip">
@@ -81,6 +81,32 @@
           </a>
         </div>
       </div>
+    </div>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--previous">
+        <img src="img/previousSlide.svg" alt="Previous slide" />
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide">
+            <img class="carousel__image" src="img/bosnia-herzegovina.jpg" alt="bosnia herzegovina" />
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__image" src="img/lake-mountains.jpg" alt="lake mountains" />
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__image" src="img/namibia-desert.jpg" alt="namibia desert" />
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--next">
+        <img src="img/nextSlide.svg" alt="Next slide" />
+      </button>
+       <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+       </div>
     </div>
   </body>
 </html>
