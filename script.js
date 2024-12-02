@@ -130,3 +130,19 @@ carouselNav.addEventListener('click', (e) => {
   updateDots(currentDot, targetDot);
   hideShowArrows(targetIndex);
 });
+
+// timeout to advance slides every 5 sec
+const autoChangeSlide = () => {
+  const currentSlide = track.querySelector('.current-slide');
+  const nextSlide = currentSlide.nextElementSibling || slides[0]; // loop back
+  const currentDot = carouselNav.querySelector('.current-slide');
+  const nextDot = currentDot.nextElementSibling || navDots[0]; // loop back
+  const targetIndex = navDots.indexOf(nextDot);
+  
+  moveToSlide(track, currentSlide, nextSlide);
+  updateDots(currentDot, nextDot);
+  hideShowArrows(targetIndex);
+};
+
+// Set a timeout to change the slide every 5 seconds
+setInterval(autoChangeSlide, 5000);
